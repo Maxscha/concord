@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the following paper."
+title: "CONCORD: Label-Free Calibration of Verbalized LLM Confidence via Rollout Consistency"
+authors:
+  - family-names: "Schall"
+    given-names: "Maximilian"
+    affiliation: "Hasso Plattner Institute, University of Potsdam"
+    email: "maximilian.schall@hpi.de"
+  - family-names: "de Melo"
+    given-names: "Gerard"
+    affiliation: "Hasso Plattner Institute, University of Potsdam"
+    email: "gerard.demelo@hpi.de"
+  - family-names: "Smyth"
+    given-names: "Padhraic"
+    affiliation: "University of California, Irvine"
+    email: "smyth@uci.edu"
+year: 2026
+preferred-citation:
+  type: conference-paper
+  title: "CONCORD: Label-Free Calibration of Verbalized LLM Confidence via Rollout Consistency"
+  authors:
+    - family-names: "Schall"
+      given-names: "Maximilian"
+    - family-names: "de Melo"
+      given-names: "Gerard"
+    - family-names: "Smyth"
+      given-names: "Padhraic"
+  conference:
+    name: "Conference on Language Modeling (COLM)"
+  year: 2026

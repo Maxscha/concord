@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 128
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = ["E203", "E501"]
+
+[tool.uv.workspace]
+members = ["train", "eval"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128", marker = "platform_machine == 'x86_64'" }]

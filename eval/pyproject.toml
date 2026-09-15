@@ -1,0 +1,39 @@
+[project]
+name = "concord-eval"
+version = "0.1.0"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "torch>=2.5",
+    "transformers",
+    "tokenizers",
+    "datasets",
+    "accelerate",
+    "sentencepiece",
+    "peft",
+    "wandb",
+    "simple-parsing",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "torchmetrics",
+    "math-verify",
+    "tqdm",
+    "hf-xet",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest"]
+
+[tool.ruff]
+line-length = 128
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = ["E203", "E501"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
